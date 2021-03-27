@@ -20,9 +20,9 @@ class Color:
         if self.blue < 0:
             self.blue = 0
             print('\t' + blue_warning + "Error in blue part of Color" + ENDC + '\n')
-        self.red += Color_New.red
-        self.green += Color_New.green
-        self.blue += Color_New.blue
+        self.red += color_new.red
+        self.green += color_new.green
+        self.blue += color_new.blue
         if self.red > 1:
             self.red = 1
         if self.green > 1:
@@ -31,9 +31,9 @@ class Color:
             self.blue = 1
 
     def subtract_color(self, color_new):
-        self.red -= Color_New.red
-        self.green -= Color_New.green
-        self.blue -= Color_New.blue
+        self.red -= color_new.red
+        self.green -= color_new.green
+        self.blue -= color_new.blue
         if self.red < 0:
             self.red = 0
         if self.green < 0:
@@ -42,4 +42,5 @@ class Color:
             self.blue = 0
 
     def print_color(self):
-        print(f"Color :{self.red, self.green, self.blue}")
+        print(f"Color: {self.red, self.green, self.blue}")
+        return self.red, self.green, self.blue

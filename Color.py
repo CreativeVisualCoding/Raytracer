@@ -44,3 +44,17 @@ class Color:
     def print_color(self):
         print(f"Color: {self.red, self.green, self.blue}")
         return self.red, self.green, self.blue
+
+    def multiply_float(self, float_num: float):
+        self.red * float_num
+        self.green * float_num
+        self.blue * float_num
+
+    def getRed(self):
+        return self.red
+
+    def getGreen(self):
+        return self.green
+
+    def getBlue(self):
+        return self.blue

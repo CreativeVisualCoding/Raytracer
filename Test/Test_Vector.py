@@ -48,7 +48,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_normalize_Vector(self):
         test_V: Vector = Vector(3, 2, 6)
-        var_Vector: Vector = test_V.normalize_Vector()
+        var_Vector: Vector = test_V.normalize_Vector
         var_tmp = var_Vector.betrag_A()
         var_new_tmp = round(var_tmp)
         self.assertEqual(1, var_new_tmp)

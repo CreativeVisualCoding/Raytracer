@@ -13,3 +13,4 @@ class Sphere:
         c = sphere_to_ray.dot_product(sphere_to_ray) - self.radius * self.radius
         discriminant = b * b - 4 * c
 
+
